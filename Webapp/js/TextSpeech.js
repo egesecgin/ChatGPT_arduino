@@ -41,7 +41,8 @@ function TextToSpeech(s) {
 	oSpeechSynthesisUtterance = new SpeechSynthesisUtterance();
 
 	if (oVoices) {
-		let sVoice = 144;
+		let sVoice = 142;
+		//142 , 120,121
 		oSpeechSynthesisUtterance.voice = oVoices[sVoice];
 	}
 

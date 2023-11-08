@@ -1,17 +1,14 @@
 body {
-  padding:
-    0;
-  margin:
-    0;
-  background:
-    #000000;
+  padding: 0;
+  margin: 0;
+  background: #000000;
   height: 100%;
   position: relative;
   overflow: hidden;
   width: 100%;
   font-family: monospace;
   line-height: 1.4em;
-  font-size: 15;
+  font-size: 15px;
 }
 
 #terminal {
@@ -21,28 +18,27 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  color: white;
-  background:#333333;
+  color: #00FF00;
+  background: #000000;
 }
 
-#history { 
+#history {
   padding-right: 30px;
 }
 
-#thinking { 
+#thinking {
   display: none;
 }
+
 #prompt {
-	display: inline-block;
-	flex-grow: 1;
-	
-	border: none;
-	outline: none;
-	
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: inherit;
+  display: inline-block;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: inherit;
   width: 90%;
 }
 
@@ -50,11 +46,13 @@ body {
   animation: blink-animation .7s steps(5, start) infinite;
   -webkit-animation: blink-animation .7s steps(5, start) infinite;
 }
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
@@ -62,46 +60,42 @@ body {
 }
 
 #commandline {
-	flex-direction: row;
-	color: inherit;
+  flex-direction: row;
+  color: inherit;
 }
+
 .user {
-  color: rgb(76, 255, 178);
+  color: #00FF00;
 }
 
 .function {
   color: rgb(100, 100, 100);
 }
+
 .system {
   color: rgb(84, 161, 255);
 }
 
 .assistant {
-  color: rgb(213, 26, 255);
+  color: rgb(255, 255, 255);
 }
 
 .error {
   color: rgb(163, 144, 36);
 }
 
+@keyframes typing-animation {
+  0% {
+    color: #00FF00;
+  }
+  50% {
+    color: #00FF00;
+  }
+  100% {
+    color: white;
+  }
+}
 
-/*
-canvas {
-  display:
-    block;
-  position:
-    absolute;
-  left:
-    50%;
-  top:
-    50%;
-  transform:
-    translate(-50%, -50%);
-  width:
-    50%;
-  height:
-    50%;
-  text-align:
-    center;
-  z-index: 1000;
-}*/
+.typing-animation {
+  animation: typing-animation 1s linear infinite;
+}

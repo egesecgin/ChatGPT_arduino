@@ -224,6 +224,9 @@ const functionHandler = {
     },
 };
 
+
+    
+
 function str2ab(str) {
     // converts string to array object
     var buf = new ArrayBuffer(str.length);
@@ -233,3 +236,7 @@ function str2ab(str) {
     }
     return buf;
 };
+
+
+
+

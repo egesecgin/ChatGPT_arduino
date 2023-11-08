@@ -191,7 +191,7 @@ function sendChatGPT(sQuestion, role, funtionName) {
 			}
 		};
 
-		let iMaxTokens = 2048;
+		let iMaxTokens = 2000;
 		let sUserId = "1";
 
 		console.log(conversationProtocal);
